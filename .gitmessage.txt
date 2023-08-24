@@ -1,0 +1,3 @@
+[Type] Short description (max 50 chars)
+
+Optional body text to explain in more detail. Wrap at 72 characters.
