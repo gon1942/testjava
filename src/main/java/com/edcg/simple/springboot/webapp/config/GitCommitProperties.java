@@ -20,4 +20,5 @@ public class GitCommitProperties {
 
     @Value("${git.commit.time:na}")
     private String time;
+    
 }
