@@ -65,10 +65,14 @@
 	                </execution>
 	            </executions>
 	            <configuration>
-	                <generateGitPropertiesFile>true</generateGitPropertiesFile>
-	                <generateGitPropertiesFilename>${project.build.outputDirectory}/git.properties</generateGitPropertiesFilename>
-	                <!-- Add more configuration if needed -->
-	            </configuration>
+				    <generateGitPropertiesFile>true</generateGitPropertiesFile>
+				    <generateGitPropertiesFilename>${project.basedir}/src/main/resources/git.properties</generateGitPropertiesFilename>
+				    <!-- ... -->
+				</configuration>
+<!-- 	            <configuration> -->
+<!-- 	                <generateGitPropertiesFile>true</generateGitPropertiesFile> -->
+<!-- 	                <generateGitPropertiesFilename>${project.build.outputDirectory}/git.properties</generateGitPropertiesFilename> -->
+<!-- 	            </configuration> -->
 	        </plugin>
 
         </plugins>
