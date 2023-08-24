@@ -37,12 +37,11 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-	<groupId>org.projectlombok</groupId>
-	<artifactId>lombok</artifactId>
-	<version>1.18.22</version>
-	<scope>provided</scope>
-</dependency>
-
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.22</version>
+			<scope>provided</scope>
+		</dependency>
     </dependencies>
 
     <build>
@@ -53,7 +52,24 @@
             </plugin>
            
            
-           
+           <!-- Other plugins... -->
+	        <plugin>
+	            <groupId>pl.project13.maven</groupId>
+	            <artifactId>git-commit-id-plugin</artifactId>
+	            <version>4.0.5</version> <!-- Choose the appropriate version -->
+	            <executions>
+	                <execution>
+	                    <goals>
+	                        <goal>revision</goal>
+	                    </goals>
+	                </execution>
+	            </executions>
+	            <configuration>
+	                <generateGitPropertiesFile>true</generateGitPropertiesFile>
+	                <generateGitPropertiesFilename>${project.build.outputDirectory}/git.properties</generateGitPropertiesFilename>
+	                <!-- Add more configuration if needed -->
+	            </configuration>
+	        </plugin>
 
         </plugins>
     </build>
