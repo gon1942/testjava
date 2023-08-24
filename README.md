@@ -1,3 +1,4 @@
+aaa
 # Simple Web Application With Spring Boot Configuration
 
 A simple web app shows the default configuration for Spring MVC with Thymeleaf with Spring Boot, and a little rest endpoint with Spring Rest Controller
